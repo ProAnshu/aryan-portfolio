@@ -1,0 +1,101 @@
+.section {
+  border-bottom: 3px solid var(--fg);
+  padding: 5rem 2rem;
+}
+
+.inner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+}
+
+.heading {
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 6vw, 5.5rem);
+  line-height: 0.9;
+  margin-bottom: 3.5rem;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+}
+
+.job {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 2rem;
+  padding: 2.5rem 0;
+  border-top: 2px solid var(--fg);
+  transition: background 0.15s;
+}
+
+.job:last-child { border-bottom: 2px solid var(--fg); }
+
+.job:hover { background: var(--yellow); margin: 0 -2rem; padding-left: 2rem; padding-right: 2rem; }
+
+.num {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  color: var(--muted);
+  padding-top: 0.2rem;
+  transition: color 0.15s;
+}
+
+.job:hover .num { color: var(--fg); }
+
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.company {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.period {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.role {
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  line-height: 1;
+  letter-spacing: 0.02em;
+}
+
+.desc {
+  font-size: 14px;
+  color: var(--muted);
+  line-height: 1.75;
+  max-width: 600px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.25rem;
+}
+
+.tag {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 0.2rem 0.6rem;
+  border: 1.5px solid var(--fg);
+  background: transparent;
+}
+
+.job:hover .tag { border-color: var(--fg); }
