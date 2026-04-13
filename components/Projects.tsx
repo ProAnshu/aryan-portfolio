@@ -6,7 +6,7 @@ const projects = [
     year: "2025",
     desc: "You really need a description for the Nokia snake game, shame on you",
     tags: ["Python", "Pygame", "Open Source"],
-    github: "https://github.com/scienmanas/Nokia-Snake-Game",
+    github: "https://github.com/AryanTheIndoDev/Snake.git",
     demo: null,
     stars: "1.2k ★",
   },
